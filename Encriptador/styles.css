@@ -1,0 +1,288 @@
+* {
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 150%;
+  overflow-y: auto;
+  margin: 0;
+}
+
+h1 {
+  text-shadow: 2px 2px #ffa45b;
+}
+
+body {
+  background-image: url(../imagenes/PlantBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/*Loading*/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.hidden {
+  display: none;
+}
+
+.load-image {
+  width: 70%;
+  height: 80%;
+}
+
+/*navbar*/
+nav {
+  background-color: lightgray;
+  position: relative;
+}
+
+.navbar-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 80px;
+  z-index: 100;
+}
+
+.navbar-container-logo {
+  margin-left: 0px;
+  margin-right: 42%;
+  z-index: 100;
+}
+
+.logo {
+  margin: 15px;
+  height: 70px;
+  width: 70px;
+  border: 2px solid #ffa45b;
+  border-radius: 50%;
+}
+
+.link a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 2px 2px #ffa45b;
+  font-size: 20px;
+  margin: 0px 25px;
+  letter-spacing: 1px;
+}
+
+.links .link {
+  display: inline-block;
+  padding-top: 8%;
+}
+
+.link a:hover {
+  border-bottom: 2px solid green;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+/*Slides*/
+#slider-wrapper {
+  border-radius: 14px;
+  width: 480px;
+  height: 390px;
+  margin: 50px auto;
+  position: relative;
+  margin-bottom: 0px;
+  overflow: hidden;
+  
+}
+
+#s1,
+#s2,
+#s3,
+#s4 {
+  padding: 6px;
+  background: #ff7300;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s1 {
+  margin-left: -36px;
+  border-radius: 20px;
+}
+
+#s2 {
+  bottom: 25px;
+  margin-left: -12px;
+  border-radius: 20px;
+}
+
+#s3 {
+  margin-left: 12px;
+  border-radius: 20px;
+}
+
+#s4 {
+  margin-left: 36px;
+  border-radius: 20px;
+}
+
+#s1:hover,
+#s2:hover,
+#s3:hover,
+#s4:hover {
+  opacity: 1;
+}
+
+.inner-wrapper img {
+  width: 350px; 
+  height: 300px;
+}
+
+.inner-wrapper {
+  margin-left: 14%;
+  border-radius: 14px;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.control {
+  display: none;
+}
+
+#Slide1:checked ~ .overflow-wrapper {
+  margin-left: 0%;
+}
+#Slide2:checked ~ .overflow-wrapper {
+  margin-left: -100%;
+}
+#Slide3:checked ~ .overflow-wrapper {
+  margin-left: -200%;
+}
+
+#Slide1:checked + #s1 {
+  opacity: 1;
+}
+#Slide2:checked + #s2 {
+  opacity: 1;
+}
+#Slide3:checked + #s3 {
+  opacity: 1;
+}
+
+.overflow-wrapper {
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.slide {
+  width: 25%;
+  float: left;
+}
+
+/*Slide 2*/
+.botones {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 20%;
+}
+
+.btn-desencriptar {
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+}
+
+.btn-encriptar:hover {
+  border: 2px solid blue;
+}
+
+.btn-desencriptar:hover {
+  border: 2px solid #ffa45b;
+}
+
+.btn-encriptar {
+  background-color: orange;
+  border: 1px solid #ffa45b;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+/*Slide 3*/
+#mensaje {
+  background-image: url("../imagenes/Building.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid blue;
+  border-radius: 14px;
+  color: black;
+  position: relative;
+}
+
+.copiar:hover {
+  border: 2px solid #ffa45b;
+}
+
+.copiar {
+  background: #d8dfe8;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+}
+
+textarea {
+  width: 300px;
+  height: 200px;
+  border: 2px solid blue;
+  border-radius: 14px;
+  font-size: 30px;
+}
+
+/*Footer*/
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer img {
+  border-radius: 14px;
+  height: 400px;
+  width: 400px;
+}

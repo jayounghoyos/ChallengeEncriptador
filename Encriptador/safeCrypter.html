@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Juan Andrés Young Hoyos" />
+
+    <title>SafeCrypter</title>
+
+    <!--links-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Icon-->
+    <link rel="icon" href="../imagenes/logo.jpeg" />
+
+</head>
+
+<body>
+    <!--Loader-->
+    <div class="loader">
+        <img src="../imagenes/back-pocket-skadi.gif" alt="cargando..." class="load-image">
+        <h1>
+            Loading ...
+        </h1>
+    </div>
+
+    <!--navbar-->
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-container-logo">
+                <a href="https://juanandresportfolio-1b5b0.web.app/"><img src="../imagenes/logo.jpeg" class="logo"
+                        alt="lucario-logo" /></a>
+            </div>
+
+            <ul class="links">
+                <li class="link"><a href="https://juanandresportfolio-1b5b0.web.app/" target="_blank">Sobre mí</a></li>
+                <li class="link"><a href="https://juanandresportfolio-1b5b0.web.app/" target="_blank">Proyectos</a></li>
+                <li class="link"><a href="https://juanandresportfolio-1b5b0.web.app/" target="_blank">Contactos</a></li>
+            </ul>
+            <div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="info">
+        <h1>SafeCrypter</h1>
+        <h3>Solo letras minúsculas y sin acentos</h3>
+    </div>
+
+    <div id="slider-wrapper">
+        <div class="inner-wrapper">
+            <input checked type="radio" name="slide" class="control" id="Slide1" />
+            <label for="Slide1" id="s1"></label>
+            <input type="radio" name="slide" class="control" id="Slide2" />
+            <label for="Slide2" id="s2"></label>
+            <input type="radio" name="slide" class="control" id="Slide3" />
+            <label for="Slide3" id="s3"></label>
+            <div class="overflow-wrapper">
+                <img src="../imagenes/Security.jpg" class="slide" />
+                <!------------------------------------------------------>
+                <div class="slide">
+                    <textarea class="text-area" id="mensaje_encriptar" cols="30" rows="10"
+                        placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="botones">
+
+                        <button class="btn-encriptar" type="button" onclick="encriptar()" id="btnEncriptar">
+                            Encriptar
+                        </button>
+                        <button class="btn-desencriptar" id="btnDesencriptar" type="button"
+                            onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+                <!------------------------------------------------------>
+                <div class="slide">
+                    <div>
+                        <textarea class="text-area" id="mensaje" cols="30" rows="10"
+                            placeholder="Texto encriptado"></textarea>
+                        <button class="btn-copiar, copiar" type="button" onclick="copiar()">Copiar</button>
+                    </div>
+                </div>
+                <!------------------------------------------------------>
+            </div>
+        </div>
+    </div>
+
+    <!--From this-->
+    <footer>
+        <h1 class="seccion-titulo">FROM THIS</h1>
+        <img src="../imagenes/FromThis.jpeg" alt="FromThis" srcset="">
+    </footer>
+
+    <!--scripts-->
+    <script src="script.js"></script>
+</body>
+
+</html>
