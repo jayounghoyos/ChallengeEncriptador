@@ -4,7 +4,7 @@ const loader = document.querySelector(".loader");
 window.addEventListener("load", function () {
   setTimeout(function () {
     loader.style.display = "none";
-  }, 4000);
+  }, 5000);
 });
 
 // Función para encriptar el texto
