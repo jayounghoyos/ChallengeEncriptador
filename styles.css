@@ -50,14 +50,13 @@ nav {
 .navbar-container {
   margin: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   line-height: 80px;
   z-index: 100;
 }
 
 .navbar-container-logo {
-  margin-left: 0px;
   z-index: 100;
 }
 
@@ -67,8 +66,6 @@ nav {
   width: 100px;
   border: 2px solid #ffa45b;
   border-radius: 50%;
-  margin-right: 750px;
-  
 }
 
 .link a {
@@ -82,8 +79,7 @@ nav {
 
 .links .link {
   display: inline-block;
-  
-  padding-top: 12%;
+  padding-top: 10%;
 }
 
 .link a:hover {
@@ -94,10 +90,10 @@ nav {
   margin-top: 20px;
 }
 
-.info h1{
+.info h1 {
   font-size: 5em;
 }
-.info h3{
+.info h3 {
   font-size: 2em;
 }
 
@@ -155,7 +151,7 @@ nav {
 }
 
 .inner-wrapper img {
-  width: 350px; 
+  width: 350px;
   height: 300px;
 }
 
@@ -295,42 +291,41 @@ footer img {
   width: 400px;
 }
 
-
 /*@medias Queries*/
-@media (max-width:600px){
-  
-  .load-image{
-    width: 150%;
+@media (max-width: 600px) {
+  .load-image {
+    width: 100%;
     height: 50%;
-    rotate: 90deg;
   }
 
   /*navbar*/
   nav {
     background-color: lightgray;
+    position: relative;
   }
-
-  .navbar-container {
-    display: inline-block;
-    width: auto;
-    line-height: 80px;
-    align-items: center;
-  }
-
-  .navbar-container-logo img {
-    width: 120px;
-    height: 120px;
-  }
-
 
   .logo {
-    width: 70px;
+    margin: 15px;
+    height: 80px;
+    width: 80px;
     border: 2px solid #ffa45b;
     border-radius: 50%;
   }
 
+  .links .link {
+    display: inline-block;
+    padding-top: 10%;
+  }
+
+  .navbar-container {
+    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 80px;
+    z-index: 100;
+  }
+
   .link a {
-    margin-left: 100px;
     text-decoration: none;
     color: black;
     text-shadow: 2px 2px #ffa45b;
@@ -342,22 +337,26 @@ footer img {
     border-bottom: 2px solid green;
   }
 
-  #slider-wrapper { 
+  .info h1 {
+    font-size: 2em;
+  }
+
+  
+  #slider-wrapper {
     border-radius: 14px;
     width: 360px;
     height: 390px;
     position: relative;
-    overflow: hidden; 
-    
+    overflow: hidden;
   }
 
   .inner-wrapper img {
     margin-right: 28px;
-    width: 300px; 
+    width: 300px;
     height: 300px;
   }
 
-  footer img{
+  footer img {
     width: 100%;
   }
 }
